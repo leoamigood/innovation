@@ -11,7 +11,7 @@ class BaseInteractor
   include Dry::Monads[:result, :do, :try, :maybe, :validated, :list]
 
   def call_with_transaction
-    in_transaction do
+    ActiveRecord::Base.transaction do
       @result = call.to_result
       raise ActiveRecord::Rollback, @result.failure if @result.failure?
     end
