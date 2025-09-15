@@ -40,21 +40,21 @@ gem "thruster", require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
-gem 'action_policy', '~> 0.7'
-gem 'dry-configurable', '~> 1.3'
-gem 'dry-initializer', '3.2.0'
-gem 'dry-initializer-rails'
-gem 'dry-monads', '~> 1.7'
-gem 'dry-transformer', '~> 1.0', '>= 1.0.1'
-gem 'dry-types', '~> 1.8', '>= 1.8.1'
-gem 'dry-validation', '~> 1.10'
-gem 'enumerize', '2.8.1'
-gem 'rswag-api'
-gem 'rswag-ui'
-gem 'state_machines', '~> 0.6.0'
-gem 'state_machines-activerecord', '~> 0.9.0'
-gem 'strong_migrations'
-gem 'wisper', '~> 3.0'
+gem "action_policy", "~> 0.7"
+gem "dry-configurable", "~> 1.3"
+gem "dry-initializer", "3.2.0"
+gem "dry-initializer-rails"
+gem "dry-monads", "~> 1.7"
+gem "dry-transformer", "~> 1.0", ">= 1.0.1"
+gem "dry-types", "~> 1.8", ">= 1.8.1"
+gem "dry-validation", "~> 1.10"
+gem "enumerize", "2.8.1"
+gem "rswag-api"
+gem "rswag-ui"
+gem "state_machines", "~> 0.6.0"
+gem "state_machines-activerecord", "~> 0.9.0"
+gem "strong_migrations"
+gem "wisper", "~> 3.0"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -66,16 +66,16 @@ group :development, :test do
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
 
-  gem 'bullet', '~> 8.0', '>= 8.0.5'
-  gem 'bundler-audit', '~> 0.9.1', require: false
-  gem 'debug', platforms: %i[mri windows]
-  gem 'isolator'
-  gem 'rubocop', '~> 1.75', require: false
-  gem 'rubocop-performance', '~> 1.21', require: false
-  gem 'rubocop-factory_bot', '~> 2.26', require: false
-  gem 'rubocop-rails', '~> 2.30', require: false
-  gem 'rubocop-rspec_rails', require: false
-  gem 'rswag-specs'
+  gem "bullet", "~> 8.0", ">= 8.0.5"
+  gem "bundler-audit", "~> 0.9.1", require: false
+  gem "debug", platforms: %i[mri windows]
+  gem "isolator"
+  gem "rubocop", "~> 1.75", require: false
+  gem "rubocop-performance", "~> 1.21", require: false
+  gem "rubocop-factory_bot", "~> 2.26", require: false
+  gem "rubocop-rails", "~> 2.30", require: false
+  gem "rubocop-rspec_rails", require: false
+  gem "rswag-specs"
 end
 
 group :development do
@@ -88,19 +88,18 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 
-  gem 'database_cleaner-active_record'
-  gem 'database_consistency', require: false
-  gem 'factory_bot_instruments', '~> 1.2'
-  gem 'factory_bot_rails', '~> 6.4'
-  gem 'ffaker', '~> 2.23'
-  gem 'jsonapi-rspec', '~> 0.0.11'
-  gem 'rspec-rails', '~> 8.0'
-  gem 'rspec-sidekiq', '~> 5.0'
-  gem 'rspec-support', '~> 3.13.0'
-  gem 'shoulda-matchers', '~> 6.2'
-  gem 'simplecov', '0.22.0', require: false
-  gem 'test-prof', '~> 1.0'
-  gem 'webmock'
-  gem 'wisper-rspec', '~> 1.1', require: false
-
+  gem "database_cleaner-active_record"
+  gem "database_consistency", require: false
+  gem "factory_bot_instruments", "~> 1.2"
+  gem "factory_bot_rails", "~> 6.4"
+  gem "ffaker", "~> 2.23"
+  gem "jsonapi-rspec", "~> 0.0.11"
+  gem "rspec-rails", "~> 8.0"
+  gem "rspec-sidekiq", "~> 5.0"
+  gem "rspec-support", "~> 3.13.0"
+  gem "shoulda-matchers", "~> 6.2"
+  gem "simplecov", "0.22.0", require: false
+  gem "test-prof", "~> 1.0"
+  gem "webmock"
+  gem "wisper-rspec", "~> 1.1", require: false
 end
