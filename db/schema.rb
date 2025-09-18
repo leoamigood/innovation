@@ -10,11 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_09_15_180016) do
+ActiveRecord::Schema[8.0].define(version: 2025_09_18_141209) do
   create_table "posts", force: :cascade do |t|
     t.string "title"
     t.text "body"
+    t.text "palette"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.datetime "discarded_at"
+    t.index ["discarded_at"], name: "index_posts_on_discarded_at"
   end
 end

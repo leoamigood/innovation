@@ -1,8 +1,15 @@
 class ApplicationController < ActionController::Base
+  include ActionPolicy::Controller
   include HandleResult
+  include HandleError
+  include CheckPolicy
 
   # Only allow modern browsers supporting webp images, web push, badges, import maps, CSS nesting, and CSS :has.
   allow_browser versions: :modern
+
+  before_action :validate_policy!
+
+  authorize :user, through: -> { Admin.new }
 
   private
 

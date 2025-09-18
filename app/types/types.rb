@@ -2,4 +2,6 @@
 
 module Types
   include Dry.Types
+
+  Palette = Instance(Palette)
 end

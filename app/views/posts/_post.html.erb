@@ -1,7 +1,9 @@
 <div id="<%= dom_id post %>">
   <p>
     <strong>Title:</strong>
-    <%= post.title %>
+    <span style="color: <%= post.palette.font_color %>; font-size: <%= post.palette.font_size %>px;">
+      <%= post.title %>
+    </span>
   </p>
 
   <p>
