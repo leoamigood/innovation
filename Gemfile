@@ -80,6 +80,6 @@ group :test do
   gem "selenium-webdriver"
 
   gem "rspec-rails", "~> 8.0"
-  gem "rspec-support", "~> 3.13.0"
+  gem "rspec-support", "~> 3.13.6"
   gem "wisper-rspec", "~> 1.1", require: false
 end
