@@ -62,7 +62,7 @@ group :development, :test do
   # gem "bullet", "~> 8.0", ">= 8.0.5"
   gem "bundler-audit", "~> 0.9.1", require: false
   gem "debug", platforms: %i[mri windows]
-  gem "rubocop", "~> 1.75", require: false
+  gem "rubocop", "~> 1.81", require: false
   gem "rubocop-performance", "~> 1.21", require: false
   gem "rubocop-factory_bot", "~> 2.26", require: false
   gem "rubocop-rails", "~> 2.30", require: false
